@@ -28,8 +28,16 @@ class Subscribers extends Database{
             $this->NL_introDescription = $information['NL_introDescription'];
             $this->NL_endTitle = $information['NL_endTitle'];
             $this->NL_endDescription = $information['NL_endDescription'];
-            // $this->NL_subject = $information['NL_subject'];
         }
+
+        return $newsLetterInfo;
+
+    }
+
+    protected function getAllNewsLetters(){
+        $sql = "SELECT * FROM newsletter";
+        $result = $this->connect()->query($sql);
+        $newsLetterInfo = $result->fetch_all(MYSQLI_ASSOC);
 
         return $newsLetterInfo;
 

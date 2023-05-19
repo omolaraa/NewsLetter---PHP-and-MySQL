@@ -41,10 +41,10 @@ if (isset($_POST['select_subject'])){
               <a href="index.php" class="nav-link  text-light">Home</a>
             </li>
             <li class="nav-item mx-5">
-              <a href="addNL_content.php" class="nav-link  text-light">Add News Letter</a>
+              <a href="components/addNL_content.comp.php" class="nav-link  text-light">Add News Letter</a>
             </li>
             <li class="nav-item mx-5">
-              <a href="editNL_content.php" class="nav-link  text-light">Edit News Letter</a>
+              <a href="components/viewNewsLetterrs.comp.php" class="nav-link  text-light">Edit News Letter</a>
             </li>
           </ul>
         </div>

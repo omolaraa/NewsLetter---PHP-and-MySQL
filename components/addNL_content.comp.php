@@ -1,6 +1,6 @@
 <?php
 
-include 'includes/autoLoader.inc.php';
+include '../includes/autoLoader_folders.inc.php';
 
 $createNewsLetter = new SubscribersContr();
 
@@ -19,11 +19,7 @@ if (isset($_POST['add_NL'])){
 }
 
 ?>
-<!-- Improve your knowledge with information
 
-Lorem ipsum dolor sit amet, con sectetur adip iscing elit, setting do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
-Lorem ipsum dolor sit amet, con sectetur adip iscing elit, setting do eiusmod tempor incididunt ut.
-New Information -->
 <!DOCTYPE html>
 <html lang="en">
 <head>

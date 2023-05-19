@@ -1,8 +1,10 @@
 <?php
 
-include 'includes/autoLoader.inc.php';
-
+include '../includes/autoLoader_folders.inc.php';
+ 
 $createNewsLetter = new SubscribersContr();
+
+$getNewsLetter = new SubscribersView();
 
 if (isset($_POST['add_NL'])){
     $NL_subject = filter_input(INPUT_POST, 'NL_subject', FILTER_SANITIZE_SPECIAL_CHARS);
@@ -19,11 +21,7 @@ if (isset($_POST['add_NL'])){
 }
 
 ?>
-<!-- Improve your knowledge with information
 
-Lorem ipsum dolor sit amet, con sectetur adip iscing elit, setting do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
-Lorem ipsum dolor sit amet, con sectetur adip iscing elit, setting do eiusmod tempor incididunt ut.
-New Information -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,7 +36,7 @@ New Information -->
 
     <div class="form-group mb-3">
         <label for="NL_subject" class="form-label"><b>NewsLetter Subject</b></label>
-        <input type="text" name="NL_subject" class="form-control">
+        <input value="<?php echo $getNewsLetter->NL_subject ?>" type="text" name="NL_subject" class="form-control">
     </div>
 
     <div class="form-group mb-3">
